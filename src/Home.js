@@ -21,7 +21,7 @@ export default function App({
         <h1>Feeling Sad?</h1>
         <h2>Want to see some blåhaj{"'"}s doing human things?</h2>
         <div className="button-wrapper">
-          <Link className="button" to={shark.image}>
+          <Link className="button" style={{ margin: 0 }} to={shark.image}>
             Show me a random blåhaj
           </Link>
           <Link className="button" to="all">
