@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp _redirects build/_redirects",
     "eject": "react-scripts eject",
     "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\""
   },
