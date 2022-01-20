@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+main {
+  width: 80vw;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-align: center;
+}
+
+button,
+a.button {
+  padding: 12px 15px;
+  border: none;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #5997a8;
+  color: #f0f0f0;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.shark {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  animation: rainbow 3s linear infinite;
+}
+
+.shark-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+@keyframes rainbow {
+  from {
+    box-shadow: 0.08em 0.08em #ff0000, 0.16em 0.16em #ff7f00,
+      0.24em 0.24em #ffff00, 0.32em 0.32em #00ff00, 0.4em 0.4em #0000ff,
+      0.48em 0.48em #4b0082, 0.54em 0.54em #8f00ff;
+  }
+  15% {
+    box-shadow: 0.08em 0.08em #8f00ff, 0.16em 0.16em #ff0000,
+      0.24em 0.24em #ff7f00, 0.32em 0.32em #ffff00, 0.4em 0.4em #00ff00,
+      0.48em 0.48em #0000ff, 0.54em 0.54em #4b0082;
+  }
+  30% {
+    box-shadow: 0.08em 0.08em #4b0082, 0.16em 0.16em #8f00ff,
+      0.24em 0.24em #ff0000, 0.32em 0.32em #ff7f00, 0.4em 0.4em #ffff00,
+      0.48em 0.48em #00ff00, 0.54em 0.54em #0000ff;
+  }
+  45% {
+    box-shadow: 0.08em 0.08em #0000ff, 0.16em 0.16em #4b0082,
+      0.24em 0.24em #8f00ff, 0.32em 0.32em#ff0000, 0.4em 0.4em #ff7f00,
+      0.48em 0.48em #ffff00, 0.54em 0.54em #00ff00;
+  }
+  60% {
+    box-shadow: 0.08em 0.08em #00ff00, 0.16em 0.16em #0000ff,
+      0.24em 0.24em #4b0082, 0.32em 0.32em #8f00ff, 0.4em 0.4em #ff0000,
+      0.48em 0.48em #ff7f00, 0.54em 0.54em #ffff00;
+  }
+  75% {
+    box-shadow: 0.08em 0.08em #ffff00, 0.16em 0.16em #00ff00,
+      0.24em 0.24em #0000ff, 0.32em 0.32em #4b0082, 0.4em 0.4em #8f00ff,
+      0.48em 0.48em #ff0000, 0.54em 0.54em #ff7f00;
+  }
+  90% {
+    box-shadow: 0.08em 0.08em #ff7f00, 0.16em 0.16em #ffff00,
+      0.24em 0.24em #00ff00, 0.32em 0.32em #0000ff, 0.4em 0.4em #4b0082,
+      0.48em 0.48em #8f00ff, 0.54em 0.54em #ff0000;
+  }
+  to {
+    box-shadow: 0.08em 0.08em #ff0000, 0.16em 0.16em #ff7f00,
+      0.24em 0.24em #ffff00, 0.32em 0.32em #00ff00, 0.4em 0.4em #0000ff,
+      0.48em 0.48em #4b0082, 0.54em 0.54em #8f00ff;
+  }
+}
