@@ -20,10 +20,14 @@ export default function App({
       <main>
         <h1>Feeling Sad?</h1>
         <h2>Want to see some blåhaj{"'"}s doing human things?</h2>
-        <Link className="button" to={shark.image}>
-          Show me a random blåhaj
-        </Link>
-        <button>Show me ALL the blåhajs</button>
+        <div className="button-wrapper">
+          <Link className="button" to={shark.image}>
+            Show me a random blåhaj
+          </Link>
+          <Link className="button" to="all">
+            Show me ALL the blåhajs
+          </Link>
+        </div>
       </main>
 
       <Suspense fallback="">

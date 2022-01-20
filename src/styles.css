@@ -41,7 +41,7 @@ a.button {
 }
 
 .shark {
-  max-width: 100%;
+  max-width: 80vw;
   max-height: 80vh;
   display: block;
   margin: auto;
@@ -51,12 +51,50 @@ a.button {
 
 .shark-wrapper {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 20px;
+}
+
+.shark-wrapper.all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .shark-wrapper.all {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shark-wrapper.all > div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw;
+  margin: auto;
+}
+
+.shark-wrapper.all img {
+  max-width: 100%;
+}
+
+.credit {
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  margin-bottom: 40px;
+  color: white;
+}
+.button-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 @keyframes rainbow {

@@ -5,6 +5,7 @@ import Home from './Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import SharkPage from './Shark'
+import All from './All'
 
 const Root = () => {
   return (
@@ -12,6 +13,7 @@ const Root = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path=":id" element={<SharkPage />} />
+        <Route path="all" element={<All />} />
       </Routes>
     </BrowserRouter>
   )

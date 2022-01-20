@@ -10,7 +10,19 @@ const SharkPage = () => {
 
   return (
     <section style={{ background }} className="shark-wrapper">
-      <img className="shark" src={`${shark.image}.jpg`} />
+      <div>
+        <img className="shark" src={`${shark.image}.jpg`} />
+        {shark.credit && (
+          <a
+            className="credit"
+            href={shark.credit}
+            target="_blank"
+            rel="noopener"
+          >
+            Image Credit
+          </a>
+        )}
+      </div>
       <Link className="button" to={`/${newShark.image}`}>
         ANOTHER
       </Link>
