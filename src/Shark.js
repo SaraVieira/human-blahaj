@@ -11,7 +11,7 @@ const SharkPage = () => {
   return (
     <section style={{ background }} className="shark-wrapper">
       <div>
-        <img className="shark" src={`${shark.image}.jpg`} />
+        <img className="shark" src={`sharks/${shark.image}.jpg`} />
         {shark.credit && (
           <a
             className="credit"
