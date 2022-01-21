@@ -10,7 +10,7 @@ const All = () => {
       {shuffle(sharks).map((shark) => (
         <div key={shark.image}>
           <div>
-            <img className='shark' src={`sharks/${shark.image}.jpg`} />
+            <img className='shark' src={`sharks/${shark.image}.jpg`} alt='' />
             {shark.credit && (
               <a
                 className='credit'
