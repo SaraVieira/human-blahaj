@@ -4,42 +4,45 @@ import { Environment } from '@react-three/drei'
 import {
   EffectComposer,
   DepthOfField,
-  Vignette
+  Vignette,
 } from '@react-three/postprocessing'
-import sharks from './sharks.json'
-import { Link } from 'react-router-dom'
-import Model from './components/Model'
-import Shark from './components/Shark'
-import Rig from './components/Rig'
+import sharks from '../helpers/sharks'
+import Model from '../components/Model'
+import Shark from '../components/Shark'
+import Rig from '../components/Rig'
 import { Bloom } from '@react-three/postprocessing'
 import { BlendFunction, Resizer, KernelSize } from 'postprocessing'
+import Link from 'next/link'
 
 export default function App({
   speed = 1,
   count = 200,
   depth = 30,
-  easing = (x) => Math.sqrt(1 - Math.pow(x - 1, 2))
+  easing = (x) => Math.sqrt(1 - Math.pow(x - 1, 2)),
 }) {
-  var shark = sharks[Math.floor(Math.random() * sharks.length)]
+  const shark = sharks[Math.floor(Math.random() * sharks.length)]
   return (
     <>
       <main>
         <h1>Feeling Sad?</h1>
         <h2>Want to see some blåhaj{"'"}s doing human things?</h2>
-        <div className="button-wrapper">
-          <Link className="button" style={{ margin: 0 }} to={shark.image}>
-            Show me a random blåhaj
+        <div className='button-wrapper'>
+          <Link href={shark.image}>
+            <a style={{ margin: 0 }} className='button'>
+              {' '}
+              Show me a random blåhaj
+            </a>
           </Link>
-          <Link className="button" to="all">
-            Show me ALL the blåhajs
+          <Link href='all'>
+            <a className='button'> Show me ALL the blåhajs</a>
           </Link>
         </div>
       </main>
 
-      <Suspense fallback="">
+      <Suspense fallback=''>
         <Canvas>
-          <color attach="background" args={['#dcf0ee']} />
-          <Environment preset="dawn" />
+          <color attach='background' args={['#dcf0ee']} />
+          <Environment preset='dawn' />
 
           {Array.from(
             { length: count },

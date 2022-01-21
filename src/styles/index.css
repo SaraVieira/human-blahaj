@@ -4,7 +4,7 @@
 
 html,
 body,
-#root {
+#__next {
   width: 100%;
   height: 100%;
   margin: 0;
