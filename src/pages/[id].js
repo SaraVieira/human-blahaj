@@ -37,7 +37,7 @@ export async function getStaticPaths() {
     .map((shark) => ({ params: { id: shark.image } }))
   return {
     paths,
-    fallback: true,
+    fallback: false,
   }
 }
 

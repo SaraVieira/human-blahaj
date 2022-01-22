@@ -1,8 +1,6 @@
 {
   "extends": ["next", "prettier"],
   "rules": {
-    "import/prefer-default-export": "off",
-    "no-console": "warn",
-    "no-var": "error"
+    "@next/next/no-img-element": 0
   }
 }
