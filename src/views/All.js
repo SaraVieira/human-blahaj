@@ -1,5 +1,5 @@
-import sharks from '../helpers/sharks'
-import { gradients } from '../helpers/gradients'
+import sharks from '@/helpers/sharks'
+import { gradients } from '@/helpers/gradients'
 import { shuffle } from '@/helpers/shuffle'
 
 const All = () => {

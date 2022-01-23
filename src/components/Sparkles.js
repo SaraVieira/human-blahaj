@@ -1,6 +1,6 @@
 import React from 'react'
-import usePrefersReducedMotion from '../hooks/usePrefersReducedMotion'
-import useRandomInterval, { random } from '../hooks/useRandomInterval'
+import usePrefersReducedMotion from '@/hooks/usePrefersReducedMotion'
+import useRandomInterval, { random } from '@/hooks/useRandomInterval'
 
 const range = (start, end, step = 1) => {
   let output = []

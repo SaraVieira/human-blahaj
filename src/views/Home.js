@@ -6,10 +6,10 @@ import {
   DepthOfField,
   Vignette,
 } from '@react-three/postprocessing'
-import sharks from '../helpers/sharks'
-import Model from '../components/Model'
-import Shark from '../components/Shark'
-import Rig from '../components/Rig'
+import sharks from '@/helpers/sharks'
+import Model from '@/components/Model'
+import Shark from '@/components/Shark'
+import Rig from '@/components/Rig'
 import { Bloom } from '@react-three/postprocessing'
 import { BlendFunction, Resizer, KernelSize } from 'postprocessing'
 import Link from 'next/link'
