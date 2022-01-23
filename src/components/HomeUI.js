@@ -10,21 +10,12 @@ const HomeUI = ({ shark }) => (
         <Sparkles>
           <Link href={shark.image}>
             <a style={{ margin: 0 }} className='button'>
-              {' '}
               Show me a random blåhaj
             </a>
           </Link>
         </Sparkles>
         <Link href='all'>
-          <a
-            className='button'
-            style={{
-              marginTop: -13,
-            }}
-          >
-            {' '}
-            Show me ALL the blåhajs
-          </a>
+          <a className='button'> Show me ALL the blåhajs</a>
         </Link>
       </div>
     </main>

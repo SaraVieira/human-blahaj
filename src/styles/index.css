@@ -96,6 +96,13 @@ a.button {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .button-wrapper .button {
+    margin-left: 0;
+  }
 }
 
 @keyframes rainbow {

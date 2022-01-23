@@ -62,7 +62,16 @@ const Sparkles = ({ color = DEFAULT_COLOR, children, ...delegated }) => {
           style={sparkle.style}
         />
       ))}
-      <strong className='font-bold relative z-1'>{children}</strong>
+      <strong
+        style={{
+          fontWeight: 'bold',
+          zIndex: 1,
+          position: 'relative',
+          display: 'flex',
+        }}
+      >
+        {children}
+      </strong>
     </div>
   )
 }
@@ -74,16 +83,20 @@ const Sparkle = ({ size, color, style }) => {
       style={{
         display: 'block',
         position: 'absolute',
+        zIndex: 2,
         ...style,
       }}
       className='spark-container'
     >
       <svg
-        className='spark-svg block'
+        className='spark-svg'
         width={size}
         height={size}
         viewBox='0 0 68 68'
         fill='none'
+        style={{
+          display: 'block',
+        }}
       >
         <path d={path} fill={color} />
       </svg>
