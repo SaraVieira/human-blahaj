@@ -6,7 +6,7 @@ import { useFrame } from '@react-three/fiber'
 // credit: https://sketchfab.com/3d-models/low-poly-blahaj-5ac23e0cd44d49dcaaa14967f7d7a778
 export default function Model(props) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/blaHAJ.gltf')
+  const { nodes, materials } = useGLTF('/modelDraco.gltf')
   const prefersReducedMotion = usePrefersReducedMotion()
 
   useFrame((state) => {
