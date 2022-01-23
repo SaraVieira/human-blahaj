@@ -12,8 +12,7 @@ import Shark from '@/components/Shark'
 import Rig from '@/components/Rig'
 import { Bloom } from '@react-three/postprocessing'
 import { BlendFunction, Resizer, KernelSize } from 'postprocessing'
-import Link from 'next/link'
-import Sparkles from '@/components/Sparkles'
+import HomeUI from '@/components/HomeUI'
 
 export default function App({
   speed = 1,
@@ -24,44 +23,7 @@ export default function App({
   const shark = sharks[Math.floor(Math.random() * sharks.length)]
   return (
     <>
-      <main>
-        <h1>Feeling Sad?</h1>
-        <h2>Want to see some blåhaj{"'"}s doing human things?</h2>
-        <div className='button-wrapper'>
-          <Sparkles>
-            <Link href={shark.image}>
-              <a style={{ margin: 0 }} className='button'>
-                {' '}
-                Show me a random blåhaj
-              </a>
-            </Link>
-          </Sparkles>
-          <Link href='all'>
-            <a
-              className='button'
-              style={{
-                marginTop: -13,
-              }}
-            >
-              {' '}
-              Show me ALL the blåhajs
-            </a>
-          </Link>
-        </div>
-      </main>
-      <footer className='credit-footer'>
-        <a href='https://skfb.ly/o8pRw' target='_blank' rel='noreferrer'>
-          Low Poly Blåhaj
-        </a>{' '}
-        by{' '}
-        <a
-          href='https://twitter.com/IsabelleDotJpeg'
-          target='_blank'
-          rel='noreferrer'
-        >
-          IsabelleDotJpeg
-        </a>
-      </footer>
+      <HomeUI shark={shark} />
       <Suspense fallback=''>
         <Canvas>
           <color attach='background' args={['#dcf0ee']} />
