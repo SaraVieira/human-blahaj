@@ -4,12 +4,6 @@ const Home = dynamic(() => import('@/views/Home'), {
   ssr: false,
 })
 
-const Page = () => {
-  return (
-    <>
-      <Home />
-    </>
-  )
-}
+const HomePage = () => <Home />
 
-export default Page
+export default HomePage

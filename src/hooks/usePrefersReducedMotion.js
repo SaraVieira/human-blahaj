@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 
 const QUERY = '(prefers-reduced-motion: no-preference)'
-const getInitialState = () => !window.matchMedia(QUERY).matches
+const getInitialState = () =>
+  typeof window !== 'undefined' && !window.matchMedia(QUERY).matches
 function usePrefersReducedMotion() {
   const [prefersReducedMotion, setPrefersReducedMotion] =
     useState(getInitialState)

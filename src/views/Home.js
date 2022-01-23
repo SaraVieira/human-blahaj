@@ -13,6 +13,7 @@ import Rig from '../components/Rig'
 import { Bloom } from '@react-three/postprocessing'
 import { BlendFunction, Resizer, KernelSize } from 'postprocessing'
 import Link from 'next/link'
+import Sparkles from '@/components/Sparkles'
 
 export default function App({
   speed = 1,
@@ -27,14 +28,24 @@ export default function App({
         <h1>Feeling Sad?</h1>
         <h2>Want to see some blåhaj{"'"}s doing human things?</h2>
         <div className='button-wrapper'>
-          <Link href={shark.image}>
-            <a style={{ margin: 0 }} className='button'>
-              {' '}
-              Show me a random blåhaj
-            </a>
-          </Link>
+          <Sparkles>
+            <Link href={shark.image}>
+              <a style={{ margin: 0 }} className='button'>
+                {' '}
+                Show me a random blåhaj
+              </a>
+            </Link>
+          </Sparkles>
           <Link href='all'>
-            <a className='button'> Show me ALL the blåhajs</a>
+            <a
+              className='button'
+              style={{
+                marginTop: -13,
+              }}
+            >
+              {' '}
+              Show me ALL the blåhajs
+            </a>
           </Link>
         </div>
       </main>
