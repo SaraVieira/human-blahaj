@@ -17,32 +17,22 @@
     "start": "next start"
   },
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.16.4",
     "@react-three/drei": "^7.25.4",
     "@react-three/fiber": "^7.0.21",
     "@react-three/postprocessing": "^2.1.2",
-    
-    "babel-plugin-styled-components": "^2.0.2",
-
     "next": "^12.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "short-uuid": "^4.2.0",
-    "three": "^0.135.0",
-    "three-stdlib": "^2.5.10"
+    "three": "^0.135.0"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^11.1.2",
-    "autoprefixer": "^10.4.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^12.0.4",
     "eslint-config-prettier": "^8.3.0",
-    "file-loader": "^6.2.0",
     "next-compose-plugins": "^2.2.1",
     "next-offline": "^5.0.5",
     "prettier": "2.5.0",
-    "raw-loader": "^4.0.2",
-    "url-loader": "^4.1.1",
     "webpack": "^5.64.4"
   }
 }
