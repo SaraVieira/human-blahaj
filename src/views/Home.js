@@ -49,7 +49,19 @@ export default function App({
           </Link>
         </div>
       </main>
-
+      <footer className='credit-footer'>
+        <a href='https://skfb.ly/o8pRw' target='_blank' rel='noreferrer'>
+          Low Poly Blåhaj
+        </a>{' '}
+        by{' '}
+        <a
+          href='https://twitter.com/IsabelleDotJpeg'
+          target='_blank'
+          rel='noreferrer'
+        >
+          IsabelleDotJpeg
+        </a>
+      </footer>
       <Suspense fallback=''>
         <Canvas>
           <color attach='background' args={['#dcf0ee']} />

@@ -10,6 +10,7 @@ body,
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
+  color: rgb(28, 28, 28);
 }
 
 body {
@@ -138,4 +139,15 @@ a.button {
       0.24em 0.24em #ffff00, 0.32em 0.32em #00ff00, 0.4em 0.4em #0000ff,
       0.48em 0.48em #4b0082, 0.54em 0.54em #8f00ff;
   }
+}
+
+.credit-footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  color: rgb(28, 28, 28);
+}
+.credit-footer a {
+  color: rgb(28, 28, 28);
 }
