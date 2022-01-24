@@ -22,11 +22,13 @@ const SharkPage = ({ shark, allSharks }) => {
           </a>
         )}
       </div>
-      <Sparkles>
-        <Link href={`/${newShark.image}`}>
-          <a className='button'>ANOTHER</a>
-        </Link>{' '}
-      </Sparkles>
+      <section className='another-shark'>
+        <Sparkles>
+          <Link href={`/${newShark.image}`}>
+            <a className='button'>ANOTHER</a>
+          </Link>
+        </Sparkles>
+      </section>
     </section>
   )
 }

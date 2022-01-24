@@ -4,7 +4,6 @@ const Header = () => {
   return (
     <>
       <Head>
-        <meta charset='utf-8' />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1, shrink-to-fit=no'
@@ -33,7 +32,7 @@ const Header = () => {
         <meta name='msapplication-TileColor' content='#da532c' />
         <meta name='theme-color' content='#ffffff' />
 
-        <meta charset='utf-8' />
+        <meta charSet='utf-8' />
         <title>Blåhaj{"'"}s being human</title>
         <meta
           name='description'

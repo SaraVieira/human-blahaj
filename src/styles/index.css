@@ -105,6 +105,11 @@ a.button {
   }
 }
 
+.another-shark {
+  position: fixed;
+  bottom: 30px;
+}
+
 @keyframes rainbow {
   from {
     box-shadow: 0.08em 0.08em #ff0000, 0.16em 0.16em #ff7f00,
