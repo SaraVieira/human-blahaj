@@ -83,6 +83,7 @@ const Sparkle = ({ size, color, style }) => {
       style={{
         display: 'block',
         position: 'absolute',
+        pointerEvents: 'none',
         zIndex: 2,
         ...style,
       }}
