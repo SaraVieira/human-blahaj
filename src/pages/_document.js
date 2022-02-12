@@ -16,6 +16,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script defer data-domain="blahaj.xyz" src="https://analytics.iamsaravieira.com/js/plausible.js"></script>
       </body>
     </Html>
   )
